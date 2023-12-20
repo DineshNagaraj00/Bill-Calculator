@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./Style/Style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <div class="background">
+            <img src="./Images/bg.jpg" alt="">
+        </div>
+        <!-- Background done -->
+
+        <div class="content">
+            <h1>Today's Special</h1>
+
+        <div class="fishFry">
+            <div class="circle">
+                <img src="./Images/1.jpg" alt="Your Image">
+            </div>
+            <h3> Italian-Fish-Fry</h3>
+        </div>
+
+        <div class="prawn">
+            <div class="circle">
+                <img src="./Images/4.jpg" alt="">
+            </div>
+            <h3> Prawns</h3>
+        </div>
+
+
+        <div class="crap">
+            <div class="circle">
+                <img src="./Images/2.jpg" alt="">
+            </div>
+            <h3> Crab</h3>
+        </div>
+
+        <!-- Food Item Done -->
+
+    <div class="priceTag">
+        <div class="head">
+            <h1>Price Detail's</h1>
+        </div>
+
+        <div class="fry">
+            <h2>Fish-Fry</h2>
+            <h3>Rs:550</h3>
+        </div>
+
+        <div class="fryTwo">
+            <h2>Prawns</h2>
+            <h3>Rs:680</h3>
+        </div>
+
+        
+        <div class="fryThree">
+            <h2>Crab</h2>
+            <h3>Rs:1500</h3>
+        </div>
+    </div>
+<!-- Price Details End -->
+
+<div class="calc">
+    <h1>Place Your Order</h1>
+
+    <div class="dropdowns">
+        <p>Select Your Items:</p>
+        <tr>
+            <td>
+        <select  id="items">
+            <option value="Fish-Fry">Fish-Fry</option>
+            <option value="Prawns">Prawns</option>
+            <option value="Crab">Crab</option>
+        </select>
+    </td>
+    </tr>
+    </div>
+
+    <!-- dropdown done -->
+    <div class="quantity">
+        <p>Quantity/ No of Plates:</p>
+        <input type="text" placeholder="Enter the quantity" id="units">
+    </div>
+
+            <!-- Quantity -->
+            <div class="btn">
+            <button id="cart">Add to Cart</button>
+            </div>
+
+            <!-- btn 1 done -->
+            <div class="empty">
+                <textarea class="bill" cols="50" rows="6" id="msg">
+                    
+                </textarea>
+            </div>
+
+            <!-- Text area -->
+
+            <button id="payBill" type="submit"onclick="bill()">Order Now</button>
+            <button id="clear" type="submit" onclick="clearMe()">Clear</button>
+    </div>
+</div>
+
+    </div>
+</body>
+</html>
+<script>
+
+        
+  
+    var adder=document.querySelector("#cart");  
+    var total=0;
+    
+    function billPayment(){
+
+    var  receipes;
+    receipes=document.querySelector("#items").value; 
+    var units=  Number( document.getElementById("units").value);
+    
+
+    switch(receipes){
+       case "Fish-Fry":
+           if(units<=5)
+           {
+              var price=units*550;
+              total=total+price;
+              console.log(price);
+               document.getElementById("msg").innerHTML+=`\rTotal Cost of Your Item for fish is Rs ${price} \n`;
+           }
+           else if (units>5)
+           {
+            price="";
+            document.getElementById("msg").innerHTML+=` Maximum order is five so choose below 6 plates ${price}`;
+           }
+           break;
+
+        case "Prawns":
+        if(units<=5)
+           {
+               price=units*500;
+               total=total+price;
+               document.getElementById("msg").innerHTML+=`Total Cost of Your Item for prawn is Rs ${price}\n `;
+           }
+           else if (units>5)
+           {
+            price="";
+            document.getElementById("msg").innerHTML=` Maximum order is five so choose below 6 plates ${price}\n`;
+           }
+           break;
+
+           case "Crab":
+           if(units<=5)
+           {
+               price=units*400;
+               total=total+price;
+               document.getElementById("msg").innerHTML+=`Total Cost of Your Item for crab is Rs ${price} \n`;
+           }
+           else if (units>5)
+           {
+            price="";
+            document.getElementById("msg").innerHTML=` Maximum order is five so choose below 6 plates ${price}`;
+           }
+           break;
+     
+        }
+    }
+    function bill(){
+
+        document.getElementById("msg").innerHTML +=`--------------------------------------\n`
+        document.getElementById("msg").innerHTML +=`Total Cost of Your Item is Rs ${total} \n`;
+        document.getElementById("msg").innerHTML +=`--------------------------------------\n`
+
+        total=0;
+    }
+    
+  function clearMe(){
+    document.getElementById('msg').innerHTML = " ";
+  }
+  adder.addEventListener("click",billPayment);
+    
+
+
+    
+    </script>

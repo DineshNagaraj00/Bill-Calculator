@@ -1,0 +1,259 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.background img{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+
+}
+.content{
+    position: relative;
+    height: 800px;
+    width: 800px;
+    background-color: rgba(0, 0, 0, 0.7);
+    margin-left: 480px;
+    margin-top: 50px;
+}
+.content h1{
+    color: gold;
+    margin-left: 300px;
+    margin-top: 5px;
+    font-family:"Precious" sans-serif;
+}
+.fishFry .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 50px;
+}
+
+.fishFry .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.fishFry h3{
+    position: absolute;
+    color: aliceblue;
+    margin-top: 200px;
+    margin-left: 60px;
+    
+}
+.prawn .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 330px;
+}
+
+.prawn .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.prawn h3{
+    position: absolute;
+    color: aliceblue;
+    margin-top: 200px;
+    margin-left: 370px;
+    
+}
+.crap .circle {
+    position: absolute;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-top: 30px;
+    margin-left: 580px;
+}
+
+.crap .circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 50%; 
+}
+.crap h3{
+    position: absolute;
+    color: aliceblue;
+    margin-top: 200px;
+    margin-left: 630px;
+    
+}
+.priceTag .head{
+    height: 40px;
+    width: 250px;
+   background: transparent;
+   border: 2px solid rgba(240, 240, 95, 0.998);
+   border-radius: 5px;
+   margin-top: 260px;
+   margin-left: 280px;
+}
+.priceTag h1{
+    position: absolute;
+    margin-left: 40px;
+    margin-top: 1px;
+    color:gold;
+    font-family: "Brock Script";
+}
+.fry{
+    position: relative;
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    margin-left: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+}
+.fry h2{
+    position: absolute;
+    margin-left: 25px;
+    color: antiquewhite;
+}
+.fry h3{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 40px;
+    color: aliceblue;
+}
+.fryTwo{
+    position:absolute;
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    margin-left: 320px;
+    border-radius: 5px;
+    margin-top: -46px;
+}
+.fryTwo h2{
+    position: absolute;
+    margin-left: 43px;
+    color: antiquewhite;
+}
+.fryTwo h3{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 50px;
+    color: aliceblue;
+}
+.fryThree{
+    position:absolute;
+    height: 50px;
+    width: 150px;
+    background-color: red;
+    margin-left: 600px;
+    border-radius: 5px;
+    margin-top: -46px;
+}
+.fryThree h2{
+    position: absolute;
+    margin-left: 48px;
+    color: antiquewhite;
+}
+.fryThree h3{
+    position: absolute;
+    margin-top: 26px;
+    margin-left: 44px;
+    color: aliceblue;
+}
+.calc{
+    height: 300px;
+    width: 600px;
+    background-color: antiquewhite;
+    margin-top: 50px;
+    margin-left: 100px;
+}
+.calc h1{
+    position: absolute;
+    margin-left: 160px;
+    margin-top: 10px;
+    color: red;
+    font-family: "Rose Knight";
+}
+.dropdowns p{
+    position: absolute;
+    margin-top:70px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:red;
+}
+.calc .dropdowns select{
+    margin-top: 72px;
+    margin-left: 300px;
+    width: 200px;
+    height: 20px;
+    color: antiquewhite;
+    background-color: black;
+    
+}
+.quantity p{
+    position: absolute;
+    margin-top:25px;
+    margin-left: 10px;
+    font-size: 20px;
+    font-weight: bolder;
+    color:red;
+}
+.quantity input{
+    margin-top: 30px;
+    margin-left: 300px;
+    width: 200px;
+    height: 20px;
+    color: antiquewhite;
+    background-color: black;
+}
+.btn #cart {
+    height: 25px;
+    width: 80px;
+    border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 230px;
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+.empty{
+    margin-top: 10px;
+    margin-left: 70px;
+}
+#payBill{
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -90px;
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+}
+#clear{
+    position: absolute;
+    margin-left: 460px;
+    margin-top: -35px;
+    height: 30px;
+    width: 100px;
+    background-color: red;
+    color: aliceblue;
+    border: none;
+    cursor: pointer;
+    
+}
